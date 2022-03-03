@@ -40,6 +40,19 @@ The following table shows the dependencies and libraries used within the project
 | signal|
 
 ## Known Issues
+- Note that this project was designed and implemented in the university environment. All datas sent through the server or via Peer-to-peer method had not been encrypted by any kinds of encryption. Origin texts will be transferred directly through the system. PLEASE DO NOT USE THIS PROJECT TO TRANSFER ANY SENSITIVE DATA WITHOUT ANY SECONDARY ENCRYPTION OR MODIFICATION.
+- This project wad developed under testing envrionment. The default setting was to transfer data/messages within the same computer and hence the server IP address has been set to 127.0.0.1 localhost by default. If the user wish to communicate between different computers, change the server IP address accordingly. 
+
+    <b>Note: However, this project does not take care of any type of network address translation and public/private IP address issues. To communicate between different computers, proper public/private IP address translation needs to be implemented.</b>
+
+
+- Users might not able to run the server at a particular port. Certain port numbers are reserved for particular services internally by the computer and others might have ongoing threads. Try to start the server at a different port and this issue should be resolved. 
+
+## Potential Improvement
+- Json files might be used to transmit data instead of plain text.
+- Data might be encrypted before communication to provide confidentiality and integrity.
+- Data might be made persistent, i.e., userBlockedList, which keeps track of if a userA have been blocked by any other users, might be stored in a file instead of dynamic memory of the program and can be persistent after the shutdown of the server.
+- Network Address Translation services might be implemented to the project to allow communications between different computers in the future. 
 
 ## Reference
 - This project was developed based on the starter code provided by the cs3331 teaching team at UNSW Sydney at Term 3, 2021

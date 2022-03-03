@@ -144,7 +144,10 @@ if len(sys.argv) != 2:
 
 # Acquire serverPort from command line parameter. serverHost have been set to 
 # localhost, 127.0.0.1, by default. This may be changed for later usage.
+
+# ### Change this line of code if you wish to communicate between different computers. 
 serverHost = 'localhost'
+
 serverPort = int(sys.argv[1])
 serverAddress = (serverHost, serverPort)
   
