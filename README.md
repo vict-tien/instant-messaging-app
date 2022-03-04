@@ -39,7 +39,10 @@ The following table shows the dependencies and libraries used within the project
 | signal|
 
 ## Known Issues
-- Note that this project was designed and implemented in the academic environment. All datas sent through the server or via the Peer-to-peer method had not been encrypted by any kinds of encryption. Plain texts will be transferred directly through the system. PLEASE DO NOT USE THIS PROJECT TO TRANSFER ANY SENSITIVE DATA WITHOUT ANY SECONDARY ENCRYPTION OR MODIFICATION.
+- Note that this project was designed and implemented in the academic environment. All datas sent through the server or via the Peer-to-peer method had not been encrypted by any kinds of encryption. Plain texts will be transferred directly through the system. 
+  
+    <b>PLEASE DO NOT USE THIS PROJECT TO TRANSFER ANY SENSITIVE DATA WITHOUT ANY SECONDARY ENCRYPTION OR MODIFICATION.</b>
+  
 - This project was developed under testing envrionment. The default setting was to transfer data/messages within the same computer and hence the server IP address in the client code has been set to 127.0.0.1 localhost by default. If the user wish to communicate between different computers, change the server IP address in the client code accordingly. 
 
     <b>Note: However, this project does not take care of any type of network address translation and public/private IP addressing issues. To communicate between different computers, proper public/private IP address translation methods will need to be implemented.</b>
